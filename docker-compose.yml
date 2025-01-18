@@ -4,6 +4,9 @@ services:
     volumes:
       - ./src:/app/ho_emulator
       - /dev/pts:/dev/pts
+      - /home/wmnlab/Desktop/experiment_log:/home/wmnlab/Desktop/experiment_log
+      - /home/wmnlab/Data:/home/wmnlab/Data
+      - /home/wmnlab/temp: /home/wmnlab/temp
     privileged: true
     command: /bin/bash
     stdin_open: true
